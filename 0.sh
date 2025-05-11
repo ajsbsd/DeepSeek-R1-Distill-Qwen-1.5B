@@ -6,3 +6,8 @@ git push -u origin main
 git branch -M main
 git config --global user.email "ajsbsd@gmail.com"
 git config --global user.name "ajsbsd@gmail.com"
+git push origin main
+pip install --upgrade transformers
+pip install --upgrade pip
+pip install --upgrade torch
+pip install --upgrade accelerate
