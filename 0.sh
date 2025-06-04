@@ -12,3 +12,6 @@ pip install --upgrade transformers
 pip install --upgrade pip
 pip install --upgrade torch
 pip install --upgrade accelerate
+pip install --upgrade fastapi
+pip install "uvicorn[standard]"
+uvicorn main:app --host 0.0.0.0 --reload
