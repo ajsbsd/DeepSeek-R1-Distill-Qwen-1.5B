@@ -1,5 +1,6 @@
-python -m venv .
-source /home/ai/bin/activate
+#!/bin/bash -x
+python3 -m venv .
+source bin/activate
 git clone https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 git branch -M main
 git push -u origin main
