@@ -80,6 +80,6 @@ async def generate_text(data: dict):
         thread.join()
 
         # Log the full response and total tokens
-        json_lines_logger.info(json.dumps({"event": "response_complete", "full_response": full_response, "total_tokens_generated": token_count}))
+        json_lines_logger.info(json.dumps({"event": "response_complete", "full_response": full_response, "total_tokens_generated": token_count},ensure_ascii=False))
 
     return StreamingResponse(stream_response(), media_type="application/json")
